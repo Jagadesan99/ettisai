@@ -1,7 +1,7 @@
 .contact-section {
     padding: var(--spacing-lg) 0 var(--spacing-md);
-    background-color: #030303;
-    /* Almost black */
+    background-color: #eeeeee;
+    /* Light gray footer */
     border-top: 1px solid var(--border-color);
     font-size: 0.9rem;
 }
@@ -79,7 +79,7 @@
 }
 
 .footer-bottom {
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
     padding-top: var(--spacing-md);
     text-align: center;
     color: var(--text-muted);

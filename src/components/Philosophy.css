@@ -1,6 +1,6 @@
 .philosophy-section {
     padding: var(--spacing-xl) 0;
-    background-color: #0d0d0d;
+    background-color: #f9f9f9;
     /* Slightly lighter than main bg */
 }
 
@@ -39,7 +39,7 @@
 }
 
 .callout-box {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(0, 0, 0, 0.05);
     padding: var(--spacing-md);
     border-radius: 4px;
     margin-top: var(--spacing-md);
@@ -65,7 +65,7 @@
 }
 
 .pillar-item {
-    background: rgba(255, 255, 255, 0.03);
+    background: rgba(0, 0, 0, 0.03);
     padding: var(--spacing-md);
     border-radius: 4px;
     border: 1px solid transparent;
