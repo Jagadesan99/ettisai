@@ -1,14 +1,20 @@
 /* Global Styles & Variables */
 :root {
   /* Colors */
-  --bg-color: #ffffff;
+  /* Colors */
+  --bg-color: #0f172a;
+  /* Deep Slate / Dark Bluish-Grey */
   /* White */
-  --text-main: #1a1a1a;
+  --text-main: #f8fafc;
+  /* Slate 50 */
   /* Dark charcoal */
-  --text-muted: #666666;
-  --accent-color: #b8860b;
+  --text-muted: #94a3b8;
+  /* Slate 400 */
+  --accent-color: #fbbf24;
+  /* Amber 400 - Bright Gold */
   /* Dark Goldenrod - darker for better contrast on white */
-  --border-color: #e0e0e0;
+  --border-color: #334155;
+  /* Slate 700 */
 
   /* Typography */
   --font-main: 'Inter', system-ui, -apple-system, sans-serif;

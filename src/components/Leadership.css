@@ -22,7 +22,7 @@
 }
 
 .standard-list {
-    background: rgba(0, 0, 0, 0.02);
+    background: rgba(255, 255, 255, 0.02);
     padding: var(--spacing-md);
     border-left: 2px solid var(--accent-color);
     margin-bottom: var(--spacing-md);
@@ -70,7 +70,7 @@
 }
 
 .activity-card {
-    background: rgba(0, 0, 0, 0.03);
+    background: rgba(255, 255, 255, 0.03);
     padding: var(--spacing-md);
     border-radius: 4px;
 }
