@@ -1,0 +1,125 @@
+.philosophy-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #0d0d0d;
+    /* Slightly lighter than main bg */
+}
+
+.section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-main);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-xs);
+    display: inline-block;
+}
+
+.beliefs-block {
+    margin-bottom: var(--spacing-xl);
+}
+
+.beliefs-content p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-muted);
+    max-width: 800px;
+}
+
+.highlight-text {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.emphasis-text {
+    font-size: 1.2rem;
+    color: var(--text-main);
+    border-left: 3px solid var(--accent-color);
+    padding-left: var(--spacing-sm);
+    margin: var(--spacing-md) 0;
+}
+
+.callout-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    margin-top: var(--spacing-md);
+    border: 1px solid var(--border-color);
+}
+
+.callout-box p {
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+.philosophy-intro {
+    margin-bottom: var(--spacing-md);
+    color: var(--text-muted);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+    list-style: none;
+    margin-bottom: var(--spacing-lg);
+}
+
+.pillar-item {
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+    border: 1px solid transparent;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.pillar-item:hover {
+    border-color: var(--accent-color);
+    transform: translateY(-5px);
+}
+
+.pillar-title {
+    display: block;
+    font-weight: 600;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-xs);
+}
+
+.pillar-source {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+}
+
+.rejection-statement {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.rejection-statement p {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-main);
+}
+
+.core-values {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-md);
+    flex-wrap: wrap;
+}
+
+.core-values span {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .core-values {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-xs);
+    }
+}

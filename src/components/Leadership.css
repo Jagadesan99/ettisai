@@ -1,0 +1,122 @@
+.leadership-section {
+    padding: var(--spacing-xl) 0;
+    background-color: var(--bg-color);
+}
+
+.leadership-block {
+    margin-bottom: var(--spacing-xl);
+}
+
+.intro-text {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    max-width: 800px;
+    margin-bottom: var(--spacing-md);
+}
+
+.subsection-title {
+    font-size: 1.5rem;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-sm);
+    font-weight: 600;
+}
+
+.standard-list {
+    background: rgba(255, 255, 255, 0.02);
+    padding: var(--spacing-md);
+    border-left: 2px solid var(--accent-color);
+    margin-bottom: var(--spacing-md);
+}
+
+.standard-items {
+    list-style: none;
+}
+
+.standard-items li {
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.1rem;
+    color: var(--text-main);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.standard-items li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+}
+
+.leadership-philosophy p {
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-sm);
+}
+
+.alignment-box {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--text-main);
+    border-top: 1px solid var(--border-color);
+    padding-top: var(--spacing-md);
+}
+
+.activities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.activity-card {
+    background: rgba(255, 255, 255, 0.03);
+    padding: var(--spacing-md);
+    border-radius: 4px;
+}
+
+.activity-card h3 {
+    color: var(--accent-color);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.25rem;
+}
+
+.activity-card ul {
+    list-style: none;
+    color: var(--text-muted);
+}
+
+.activity-card ul li {
+    margin-bottom: var(--spacing-xs);
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 0.5rem;
+}
+
+.activity-card ul li:last-child {
+    border-bottom: none;
+}
+
+.anti-patterns {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xs);
+    margin-top: var(--spacing-md);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.strike {
+    text-decoration: line-through;
+    opacity: 0.6;
+}
+
+.highlight {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .activities-grid {
+        grid-template-columns: 1fr;
+    }
+}

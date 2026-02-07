@@ -1,0 +1,56 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: rgba(10, 10, 10, 0.8);
+    /* Semi-transparent background */
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--text-main);
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: var(--spacing-md);
+}
+
+.nav-link {
+    font-family: var(--font-main);
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none;
+        /* Hide nav on mobile for now, or implement burger menu later */
+    }
+}

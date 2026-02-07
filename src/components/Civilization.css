@@ -1,0 +1,123 @@
+.civilization-section {
+    padding: var(--spacing-xl) 0;
+    background-color: #050505;
+    /* Darker background */
+    position: relative;
+}
+
+.civilization-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.left-column,
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro-text {
+    font-size: 1.25rem;
+    color: var(--text-main);
+    margin-bottom: var(--spacing-md);
+    border-left: 4px solid var(--accent-color);
+    padding-left: var(--spacing-sm);
+}
+
+.emphasis-quote {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    font-style: italic;
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+}
+
+.tamil-term {
+    color: var(--accent-color);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.concept-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+.concept-item {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: var(--spacing-sm);
+}
+
+.concept-item:last-child {
+    border-bottom: none;
+}
+
+.concept-term {
+    display: block;
+    font-size: 1.2rem;
+    color: var(--text-main);
+    margin-bottom: 0.2rem;
+    font-weight: 600;
+}
+
+.concept-def {
+    display: block;
+    font-size: 0.9rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: var(--spacing-xs);
+}
+
+.concept-desc {
+    font-size: 1rem;
+    color: var(--text-muted);
+}
+
+.closing-thought {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto;
+    border-top: 1px solid var(--border-color);
+    padding-top: var(--spacing-lg);
+}
+
+.closing-thought p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+}
+
+.final-statement {
+    margin-top: var(--spacing-md);
+}
+
+.term {
+    color: var(--text-main);
+    font-style: italic;
+}
+
+.highlight-large {
+    color: var(--accent-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.tamil-final {
+    margin-top: var(--spacing-md);
+    font-size: 1.5rem;
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+@media (max-width: 900px) {
+    .civilization-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}

@@ -1,0 +1,85 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding-top: var(--header-height);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Abstract background element */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -20%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(212, 160, 23, 0.05) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.hero-container {
+    max-width: 800px;
+    /* Narrower for reading focus */
+}
+
+.hero-title {
+    font-size: clamp(3rem, 8vw, 6rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: var(--spacing-md);
+    color: var(--text-muted);
+}
+
+.highlight {
+    color: var(--text-main);
+    display: block;
+}
+
+.hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    margin-bottom: var(--spacing-md);
+    border-left: 2px solid var(--accent-color);
+    padding-left: var(--spacing-sm);
+}
+
+.text-white {
+    color: var(--text-main);
+    font-weight: 600;
+}
+
+.hero-quote {
+    margin: var(--spacing-lg) 0;
+    padding: var(--spacing-md);
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 4px;
+}
+
+.tamil-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-xs);
+    color: var(--text-main);
+}
+
+.quote-translation {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.hero-description p {
+    font-size: 1.1rem;
+    margin-bottom: var(--spacing-sm);
+    color: var(--text-main);
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+}
